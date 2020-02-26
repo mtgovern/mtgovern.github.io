@@ -42,7 +42,7 @@
       var userPassword = "";
       var passwordGroup = "";
 
-      //Request user to enter the length of the password
+      //Request user to enter length of password
       var plength = parseInt(prompt("Enter length of password.",""));
 
       //Require number
@@ -57,20 +57,20 @@
         var plength = parseInt(prompt("Enter length of password.* Length must be between 8 - 128 characters",""));
       } 
       
-      // Confirm whether user wants to use lower case letters 
+      // Confirm if user wants to use lower case 
       var selectLowerCase = confirm("Would you like to use lower case letters?");
-      // Confirm whether user wants to use upper case letters
+      // Confirm if user wants to use upper case 
       var selectUpperCase = confirm("Would you like to use upper case letters?");
-      //Confirm whether user wants to use numeric characters 
+      //Confirm if user wants to use numeric characters 
       var selectNumber = confirm("Would you like to use numbers?");
-      //Confirm whether user wants to use special symbols
+      //Confirm if user wants to use special symbols
       var selectSpecial = confirm("Would you like to user special characters?");
 
 
       //Call function to generate password 
       generatePassword();
 
-      alert("Your Password is: "+ userPassword);
+      alert("Your Password is: " + userPassword);
       //Write generated password on page
       document.getElementById("password").innerHTML = userPassword;
 
@@ -97,15 +97,6 @@
         }
         return userPassword;
       }
-
-      // Copy the password to clipboard
-      // function copyPassword(){
-      //   var copyText = document.getElementById("password");
-      //   copyText.select();
-      //   copyText.setSelectionRange(0,99999);
-      //   document.execCommand("copy");
-      //   alert("Copied");
-      // }
 
     </script>
 
