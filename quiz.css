@@ -1,0 +1,38 @@
+/* nav bar */
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/* main */
+#quizBody {
+    text-align: center;
+    padding: 10vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    background-color: salmon;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 12px 8px 12px;
+    font-size: 16px;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: lightsalmon;
+
+}
+
+#quiz {
+    text-align: center;
+}
