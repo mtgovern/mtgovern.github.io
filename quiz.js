@@ -66,6 +66,19 @@ function setScore() {
     getScore();
 }
 
+function getScore() {
+    var quizContent = `
+    <h1> High Scores</h1>
+    <h2>` + localStorage.getItem("highscoreInitials") + ` -
+    ` + localStorage.getItem("highscore") + `</h2><br> 
+    
+    <button onclick="clearScore()">Clear score!</button><button onclick="resetGame()">Play Again!</button>
+    
+    `;
+
+    document.getElementById("quizBody").innerHTML = quizContent;
+}
+
 //deduct 5seconds from timer if incorrect answer
 function incorrect() {
     timeLeft -= 5; 
